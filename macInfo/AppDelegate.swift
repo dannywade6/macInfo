@@ -16,6 +16,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Create the SwiftUI view that provides the contents
+        if let window = NSApplication.shared.windows.first {
+            window.close()
+        }
         let contentView = ContentView()
         NSApp.setActivationPolicy(.accessory)
 
