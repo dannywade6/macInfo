@@ -11,6 +11,8 @@
 		30EF20F32826E15900895DD3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EF20F22826E15900895DD3 /* ContentView.swift */; };
 		30EF20F52826E15A00895DD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30EF20F42826E15A00895DD3 /* Assets.xcassets */; };
 		30EF20F82826E15A00895DD3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30EF20F72826E15A00895DD3 /* Preview Assets.xcassets */; };
+		30EF21002826E17600895DD3 /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EF20FF2826E17600895DD3 /* StatusBarController.swift */; };
+		30EF21022826E25D00895DD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EF21012826E25D00895DD3 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,9 @@
 		30EF20F42826E15A00895DD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30EF20F72826E15A00895DD3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		30EF20F92826E15A00895DD3 /* macInfo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macInfo.entitlements; sourceTree = "<group>"; };
+		30EF20FF2826E17600895DD3 /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
+		30EF21012826E25D00895DD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		30F598E32826F86C00AF70F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +57,14 @@
 		30EF20EF2826E15900895DD3 /* macInfo */ = {
 			isa = PBXGroup;
 			children = (
+				30F598E32826F86C00AF70F2 /* Info.plist */,
 				30EF20F02826E15900895DD3 /* macInfoApp.swift */,
 				30EF20F22826E15900895DD3 /* ContentView.swift */,
 				30EF20F42826E15A00895DD3 /* Assets.xcassets */,
 				30EF20F92826E15A00895DD3 /* macInfo.entitlements */,
 				30EF20F62826E15A00895DD3 /* Preview Content */,
+				30EF20FF2826E17600895DD3 /* StatusBarController.swift */,
+				30EF21012826E25D00895DD3 /* AppDelegate.swift */,
 			);
 			path = macInfo;
 			sourceTree = "<group>";
@@ -139,7 +147,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30EF21022826E25D00895DD3 /* AppDelegate.swift in Sources */,
 				30EF20F32826E15900895DD3 /* ContentView.swift in Sources */,
+				30EF21002826E17600895DD3 /* StatusBarController.swift in Sources */,
 				30EF20F12826E15900895DD3 /* macInfoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +284,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = macInfo/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,6 +312,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = macInfo/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
